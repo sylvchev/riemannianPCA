@@ -92,7 +92,7 @@ def get_cost_pytorch(manifold, C, y, k=3):
     return cost_pytorch
 
 
-def compute_subspaces(
+def compute_supervised_rpca(
     C,
     subspace_dim,
     y=None,
@@ -103,7 +103,7 @@ def compute_subspaces(
     init=None,
     k=3,
 ):
-    """Estimate discriminative subspaces from high dim covariance matrices
+    """Estimate discrimanative Riemannian PCA from high dim covariance matrices
 
     Parameters
     ----------
