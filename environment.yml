@@ -1,0 +1,25 @@
+name: pymanopt
+channels:
+  - pytorch
+  - defaults
+  - conda-forge
+dependencies:
+  - autograd
+  - black
+  - ipython
+  - matplotlib
+  - mne
+  - numpy
+  - pandas
+  - python=3.9
+  - pytorch
+  - scikit-learn
+  - scipy
+  - seaborn
+  - torchaudio
+  - torchvision
+  - tqdm
+  - pip:
+      - pymanopt==2.1.1
+      - git+https://github.com/pyRiemann/pyRiemann.git
+prefix: /Users/sylchev/opt/mambaforge/envs/pymanopt

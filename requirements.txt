@@ -1,0 +1,16 @@
+autograd
+black
+ipython
+matplotlib
+mne
+numpy
+pandas
+pymanopt
+pyriemann
+scikit-learn
+scipy
+seaborn
+torch
+torchaudio
+torchvision
+tqdm
