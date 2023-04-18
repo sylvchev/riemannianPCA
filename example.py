@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from pymanopt.optimizers.line_search import AdaptiveLineSearcher
 from pyriemann.datasets import make_matrices
-from pyriemann.utils.mean import mean_covariance
 
 from riemannianpca import compute_supervised_rpca
 
@@ -15,8 +14,6 @@ solv_args = {
     "max_iterations": 30,
     "max_time": float("inf"),
 }
-starting_point = mean_covariance(C, metric="riemann")
-
 
 U, logs = compute_supervised_rpca(
     C=C,
@@ -26,7 +23,7 @@ U, logs = compute_supervised_rpca(
     solver="steepest",
     solv_args=solv_args,
     return_log=True,
-    init=starting_point,
+    init=None,
     k=3,
 )
 
